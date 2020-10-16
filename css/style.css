@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 6rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 940px;
+    width: 100%;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    border-radius: 20px;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1.2rem 2rem;
+    font-size: 1.4rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn.btn-ghost{
+    color: #2c3e50;
+    background-color: #fff;
+    border: 1px solid #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.btn-ghost img{
+    height: 2.5rem;
+    margin-right: 2rem;
+}
+
+.container form{
+    flex: 1;
+}
+
+.container .features{
+    flex: 1.3;
+    padding-left: 4rem;
+}
+
+small{
+    font-size: 1.3rem;
+    color: #999;
+    margin: 2rem 0;
+    display: block;
+    text-align: center;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-control input{
+    border: 1px solid #2c3e50;
+    color: #2c3e50;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+}
+
+.form-control input:focus{
+    outline: none;
+}
+
+.checkbox-container{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.checkbox-container #remember{
+    padding-right: 2rem;
+}
+
+
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.features .feature{
+    display: flex;
+    align-items: flex-start;
+    padding: 2rem 0;
+}
+
+.features .feature i, .features .feature h3{
+    font-size: 2rem;
+}
+
+.features .feature i{
+    padding-right: 2rem;
+}
+
+.features .feature p{
+    font-size: 1.4rem;
+    color: #555;
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        display: block;
+        border-radius: none;
+        box-shadow: none;
+    }
+
+    .container form{
+        margin-bottom: 3rem;
+    }
+
+    .container .features{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .features .feature{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features .feature i{
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+}
